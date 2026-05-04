@@ -1,0 +1,115 @@
+// .sidebar {
+//   flex: 1;
+//   // height: calc(100vh - 50px);
+//   height: calc(100vh);
+//   background-color: #fff;
+//   position: relative;
+//   top: 50px;
+
+// }
+
+// .sidebarWrapper {
+//   padding: 5px 10px 20px 10px;
+//   color: #222020;
+// }
+
+// .sidebarMenu {
+//   margin-bottom: 10px;
+// }
+
+// .sidebarTitle {
+//   font-size: 13px;
+//   color: #0d0c0c;
+//   font-weight: bold;
+//   margin-top: 15px;
+//   margin-bottom: 5px;
+//   text-align: left;
+// }
+
+// .sidebarList {
+//   list-style: none;
+//   padding: 5px;
+// }
+
+// .sidebarListItem {
+//   padding: 5px;
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   border-radius: 10px;
+//   font-size: 12px;
+//   text-align: start;
+//   font-weight: 700;
+// }
+
+// .sidebarListItem.active,
+// .sidebarListItem:hover {
+//   background-color: #f3f2ef;
+// }
+
+// .sidebarIcon {
+//   margin-right: 12px;
+//   color: #524d4d;
+//   font-size: 24px !important;
+// }
+///////////change color////
+.sidebar {
+  flex: 1;
+  height: calc(100vh);
+  background-color: #212121;
+  /* Light gray to make sidebar look softer */
+  position: relative;
+  top: 50px;
+}
+
+.sidebarWrapper {
+  padding: 5px 10px 20px 10px;
+  color: #333333;
+  /* Darker text for better readability */
+}
+
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+
+.sidebarTitle {
+  font-size: 13px;
+  color: #f7f9fc;
+  /* Darker title color for better contrast */
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidebarListItem {
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: start;
+  font-weight: 700;
+  color: #f7f9fc;
+  /* Neutral color for items */
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: #4c4847;
+  /* Light blue shade to highlight active items */
+  width: 180px;
+}
+
+.sidebarIcon {
+  margin-right: 12px;
+  color: #f7f9fc;
+  /* Neutral icon color */
+  font-size: 24px !important;
+}
