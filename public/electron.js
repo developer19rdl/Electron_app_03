@@ -2,6 +2,16 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const isDev = !app.isPackaged;
 
+// Ignore certificate errors for self-signed certificates
+app.commandLine.appendSwitch('ignore-certificate-errors');
+
+// Alternatively, handle the certificate-error event
+app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
+    // On certificate error we can bypass it
+    event.preventDefault();
+    callback(true);
+});
+
 function createWindow() {
     // Create the browser window.
     const win = new BrowserWindow({
